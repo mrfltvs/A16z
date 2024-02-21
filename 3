@@ -1,0 +1,8 @@
+ public:
+        Block(std::string data, std::string previousHash) {
+            this->data = data;
+            this->previousHash = previousHash;
+            this->timestamp = getTimestamp();
+            this->nonce = 0;
+            this->hash = calculateHash();
+        }
