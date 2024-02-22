@@ -1,0 +1,5 @@
+        std::string calculateHash() {
+            std::stringstream ss;
+            ss << previousHash << timestamp << data << nonce;
+            return ss.str();
+        }
