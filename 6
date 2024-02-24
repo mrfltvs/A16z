@@ -1,0 +1,6 @@
+ private:
+        std::string getTimestamp() {
+            time_t now = std::time(nullptr);
+            return std::ctime(&now);
+        }
+};
