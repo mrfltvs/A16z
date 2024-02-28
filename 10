@@ -1,0 +1,5 @@
+Block createGenesisBlock() {
+            std::string data = "Genesis Block";
+            std::string previousHash = "0";
+            return Block(data, previousHash);
+        }
