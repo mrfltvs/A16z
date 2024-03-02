@@ -1,0 +1,8 @@
+ Block getLatestBlock() {
+            return chain.back();
+        }
+
+        void addBlock(Block newBlock) {
+            newBlock.mineBlock(difficulty);
+            chain.push_back(newBlock);
+        }
