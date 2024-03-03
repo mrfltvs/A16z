@@ -1,0 +1,8 @@
+ bool isChainValid() {
+            for (int i = 1; i < chain.size(); i++) {
+                Block currentBlock = chain[i];
+                Block previousBlock = chain[i-1];
+
+                if (currentBlock.calculateHash() != currentBlock.calculateHash()) {
+                    return false;
+                }
