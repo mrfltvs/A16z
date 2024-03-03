@@ -1,0 +1,8 @@
+f (currentBlock.getPreviousHash() != previousBlock.getHash()) {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+};
