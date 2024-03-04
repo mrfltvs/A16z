@@ -1,0 +1,5 @@
+int main() {
+    Blockchain blockchain;
+
+    Block block1("Block 1 Data", blockchain.getLatestBlock().getHash());
+    blockchain.addBlock(block1);
