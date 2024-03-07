@@ -1,0 +1,8 @@
+ if (blockchain.isChainValid()) {
+        std::cout << "Blockchain is valid." << std::endl;
+    } else {
+        std::cout << "Blockchain is not valid." << std::endl;
+    }
+
+    return 0;
+}
