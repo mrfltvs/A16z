@@ -1,0 +1,15 @@
+cpp
+#include <ctime>
+#include <iostream>
+#include <string>
+#include <vector>
+
+// Define a block structure
+struct Block {
+    int index;
+    std::string previousHash;
+    std::time_t timestamp;
+    std::string data;
+    std::string hash;
+    int nonce;
+};
