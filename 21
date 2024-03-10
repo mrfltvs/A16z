@@ -1,0 +1,6 @@
+// Function to calculate the hash of a block
+std::string calculateHash(const Block& block) {
+    // You can use any hashing algorithm here
+    std::string data = std::to_string(block.index) + block.previousHash + std::to_string(block.timestamp) + block.data + std::to_string(block.nonce);
+    return std::to_string(std::hash<std::string>{}(data));
+}
