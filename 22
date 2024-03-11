@@ -1,0 +1,11 @@
+// Function to generate a new block in the blockchain
+Block generateBlock(const Block& previousBlock, const std::string& data) {
+    Block newBlock;
+    newBlock.index = previousBlock.index + 1;
+    newBlock.previousHash = previousBlock.hash;
+    newBlock.timestamp = std::time(nullptr);
+    newBlock.data = data;
+    newBlock.nonce = 0;
+    newBlock.hash = calculateHash(newBlock);
+    return newBlock;
+}
