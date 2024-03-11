@@ -1,0 +1,9 @@
+// Function to check if a block's hash is valid
+bool isHashValid(const Block& block) {
+    std::string targetHash;
+    for (int i = 0; i < 4; i++) {
+        targetHash += "0";
+    }
+
+    return block.hash.substr(0, 4) == targetHash;
+}
