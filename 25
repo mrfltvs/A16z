@@ -1,0 +1,9 @@
+// Function to mine blocks by finding a valid hash
+Block mineBlock(const Block& previousBlock, const std::string& data) {
+    Block newBlock = generateBlock(previousBlock, data);
+    while (!isHashValid(newBlock)) {
+        newBlock.nonce++;
+        newBlock.hash = calculateHash(newBlock);
+    }
+    return newBlock;
+}
