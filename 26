@@ -1,0 +1,12 @@
+int main() {
+    std::vector<Block> blockchain;
+
+    // Genesis block
+    Block genesisBlock;
+    genesisBlock.index = 0;
+    genesisBlock.previousHash = "";
+    genesisBlock.timestamp = std::time(nullptr);
+    genesisBlock.data = "Genesis Block";
+    genesisBlock.nonce = 0;
+    genesisBlock.hash = calculateHash(genesisBlock);
+    blockchain.push_back(genesisBlock);
