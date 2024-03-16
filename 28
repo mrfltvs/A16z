@@ -1,0 +1,13 @@
+ // Print the blockchain
+    for (const Block& block : blockchain) {
+        std::cout << "-------------------------" << std::endl;
+        std::cout << "Block Index: " << block.index << std::endl;
+        std::cout << "Previous Hash: " << block.previousHash << std::endl;
+        std::cout << "Timestamp: " << std::asctime(std::localtime(&block.timestamp));
+        std::cout << "Data: " << block.data << std::endl;
+        std::cout << "Hash: " << block.hash << std::endl;
+        std::cout << "Nonce: " << block.nonce << std::endl;
+    }
+
+    return 0;
+}
