@@ -1,0 +1,12 @@
+cpp
+#include <iostream>
+#include <vector>
+#include <string>
+
+// Define a block structure
+struct Block {
+    int index;
+    std::string previousHash;
+    std::string hash;
+    std::string data;
+};
