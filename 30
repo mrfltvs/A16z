@@ -1,0 +1,9 @@
+// Function to create a new block
+Block createBlock(int index, const std::string& previousHash, const std::string& hash, const std::string& data) {
+    Block newBlock;
+    newBlock.index = index;
+    newBlock.previousHash = previousHash;
+    newBlock.hash = hash;
+    newBlock.data = data;
+    return newBlock;
+}
