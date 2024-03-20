@@ -1,0 +1,11 @@
+int main() {
+    std::vector<Block> blockchain;
+
+    // Create initial genesis block
+    Block genesisBlock = createBlock(0, "0", "abcd1234", "Initial data");
+    blockchain.push_back(genesisBlock);
+
+    // Add some blocks to the blockchain
+    blockchain.push_back(createBlock(1, genesisBlock.hash, "efgh5678", "Block 1 data"));
+    blockchain.push_back(createBlock(2, blockchain.back().hash, "ijkl9012", "Block 2 data"));
+    blockchain.push_back(createBlock(3, blockchain.back().hash, "mnop3456", "Block 3 data"));
