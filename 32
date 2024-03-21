@@ -1,0 +1,9 @@
+// Fork the blockchain by creating a new branch
+    std::vector<Block> forkedBlockchain = blockchain;
+    forkedBlockchain.push_back(createBlock(3, forkedBlockchain.back().hash, "qrst7890", "Forked Block 3 data"));
+
+    // Print the original blockchain
+    std::cout << "Original Blockchain:\n";
+    for (const auto& block : blockchain) {
+        std::cout << "Index: " << block.index << ", Hash: " << block.hash << ", Data: " << block.data << "\n";
+    }
