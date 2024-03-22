@@ -1,0 +1,10 @@
+ std::cout << "\n";
+
+    // Print the forked blockchain
+    std::cout << "Forked Blockchain:\n";
+    for (const auto& block : forkedBlockchain) {
+        std::cout << "Index: " << block.index << ", Hash: " << block.hash << ", Data: " << block.data << "\n";
+    }
+
+    return 0;
+}
