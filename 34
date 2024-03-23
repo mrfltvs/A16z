@@ -1,0 +1,10 @@
+#include <iostream>
+#include <string>
+#include <openssl/sha.h> // For SHA-256 hashing
+
+class Block {
+public:
+    std::string data;
+    std::string previousHash;
+    std::string timestamp;
+    std::string hash;
