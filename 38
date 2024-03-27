@@ -1,0 +1,16 @@
+#include <iostream>
+#include <string>
+#include <openssl/sha.h> // For SHA-256 hashing
+
+class Block {
+public:
+    std::string data;
+    std::string previousHash;
+    std::string timestamp;
+    std::string hash;
+
+    Block(const std::string& data, const std::string& previousHash)
+        : data(data), previousHash(previousHash) {
+        timestamp = std::to_string(time(nullptr)); // Get current timestamp
+        hash = calculateHash();
+    }
