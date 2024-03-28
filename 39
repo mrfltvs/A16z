@@ -1,0 +1,19 @@
+ std::string calculateHash() const {
+        // Combine data, previousHash, and timestamp into a string
+        std::string combined = data + previousHash + timestamp;
+
+        // Calculate SHA-256 hash of the combined string
+        unsigned char hash[SHA256_DIGEST_LENGTH];
+        SHA256_CTX sha256;
+        SHA256_Init(&sha256);
+        SHA256_Update(&sha256, combined.c_str(), combined.length());
+        SHA256_Final(hash, &sha256);
+
+        // Convert hash bytes to a string
+        std::stringstream ss;
+        for (int i = 0; i < SHA256_DIGEST_LENGTH; i++) {
+            ss << std::hex << std::setw(2) << std::setfill('0') << (int)hash[i];
+        }
+        return ss.str();
+    }
+};
