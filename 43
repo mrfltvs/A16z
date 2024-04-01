@@ -1,0 +1,13 @@
+# Create a blockchain and add some blocks
+blockchain = Blockchain()
+blockchain.add_block(Block(1, datetime.datetime.now(), "Second Block", ""))
+blockchain.add_block(Block(2, datetime.datetime.now(), "Third Block", ""))
+
+# Print the blockchain
+for block in blockchain.chain:
+    print("Block Index: " + str(block.index))
+    print("Block Timestamp: " + str(block.timestamp))
+    print("Block Data: " + block.data)
+    print("Block Hash: " + block.hash)
+    print("Previous Hash: " + block.previous_hash)
+    print("\n")
