@@ -1,0 +1,9 @@
+ {
+        "constant": False,
+        "inputs": [],
+        "name": "addLiquidity",
+        "outputs": [],
+        "payable": True,
+        "stateMutability": "payable",
+        "type": "function"
+    },
