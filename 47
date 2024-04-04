@@ -1,0 +1,10 @@
+ {
+        "constant": False,
+        "inputs": [],
+        "name": "removeLiquidity",
+        "outputs": [],
+        "payable": True,
+        "stateMutability": "payable",
+        "type": "function"
+    }
+]
