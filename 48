@@ -1,0 +1,5 @@
+# Load the contract
+contract = web3.eth.contract(address=contract_address, abi=contract_abi)
+
+# Create a new account to act as the liquidity provider
+account = Account.create()
