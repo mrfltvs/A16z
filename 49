@@ -1,0 +1,8 @@
+# Send a transaction to add liquidity to the pool
+tx_hash = contract.functions.addLiquidity().transact({
+    'from': account.address,
+    'value': web3.toWei(1, 'ether')
+})
+
+# Wait for the transaction to be mined
+tx_receipt = web3.eth.waitForTransactionReceipt(tx_hash)
