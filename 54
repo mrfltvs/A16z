@@ -1,0 +1,11 @@
+#include <vector>
+
+class Blockchain {
+public:
+    std::vector<Block> chain;
+
+    Blockchain() {
+        // Create the genesis block (first block in the chain)
+        Block genesisBlock("Genesis Block", "0");
+        chain.push_back(genesisBlock);
+    }
