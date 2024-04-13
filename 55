@@ -1,0 +1,14 @@
+C++
+
+
+    void addBlock(const Block& newBlock) {
+        // Ensure the new block's previous hash matches the last block's hash
+        if (newBlock.previousHash != chain.back().hash) {
+            std::cerr << "Invalid previous hash\n";
+            return;
+        }
+
+        // Add the new block to the chain
+        chain.push_back(newBlock);
+    }
+};
