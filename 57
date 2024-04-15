@@ -1,0 +1,6 @@
+# Sample account addresses (replace with your actual accounts)
+account_1 = "0x..."
+account_2 = "0x..."
+
+# Assume some initial token balances for accounts
+token_balances = {account_1: 100, account_2: 50}
