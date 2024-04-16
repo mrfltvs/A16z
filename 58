@@ -1,0 +1,4 @@
+def transfer_tokens(from_account, to_account, amount):
+    if token_balances[from_account] < amount:
+        print("Insufficient balance for", from_account)
+        return
