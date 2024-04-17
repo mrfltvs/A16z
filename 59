@@ -1,0 +1,4 @@
+    # Simulate token transfer using web3 (replace with actual token contract interaction)
+    print(f"{amount} tokens transferred from {from_account} to {to_account}")
+    token_balances[from_account] -= amount
+    token_balances[to_account] += amount
