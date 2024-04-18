@@ -1,0 +1,3 @@
+# Example usage
+transfer_tokens(account_1, account_2, 20)
+print("Updated balances:", token_balances)
