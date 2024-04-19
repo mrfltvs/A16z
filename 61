@@ -1,0 +1,6 @@
+import web3
+from eth_account import Account
+
+# Connect to a blockchain node (e.g., Infura)
+infura_url = "https://mainnet.infura.io/v3/YOUR-INFURA-PROJECT-ID"  # Replace with your Infura project ID
+w3 = web3.Web3(web3.HTTPProvider(infura_url))
