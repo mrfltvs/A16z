@@ -1,0 +1,5 @@
+# Function to check wallet balance
+def get_balance(account):
+    address = account.address
+    balance = w3.eth.get_balance(address)
+    return balance
