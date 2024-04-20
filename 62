@@ -1,0 +1,5 @@
+# Function to securely generate a new wallet
+def create_wallet():
+    private_key = w3.eth.account.create()
+    return Account.privateKeyToAccount(private_key)
+    
