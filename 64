@@ -1,0 +1,11 @@
+# Function to send ETH securely
+def send_transaction(account, recipient, amount):
+    gas_price = w3.eth.gas_price
+    nonce = w3.eth.get_transaction_count(account.address)
+    transaction = {
+        'nonce': nonce,
+        'to': recipient,
+        'value': amount,
+        'gas': w3.eth.estimate_gas({'to': recipient, 'value': amount}),
+        'gasPrice': gas_price
+    }
