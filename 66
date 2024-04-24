@@ -1,0 +1,6 @@
+import org.web3j.crypto.Credentials;
+import org.web3j.crypto.WalletUtil;
+import org.web3j.protocol.Web3j;
+import org.web3j.protocol.http.HttpWeb3j;
+
+public class BlockchainWallet {
