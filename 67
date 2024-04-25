@@ -1,0 +1,5 @@
+ private static final String NODE_URL = "https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID"; // Replace with your Infura project ID
+
+    public static void main(String[] args) throws Exception {
+        // Connect to a blockchain node
+        Web3j web3j = Web3j.build(new HttpWeb3j(NODE_URL));
