@@ -1,0 +1,6 @@
+        // Option A: Create a new wallet (secure key storage required)
+        String walletFilePath = "my_wallet.json"; // Replace with a secure location
+        Credentials credentials = WalletUtil.createWallet(
+                "strong_password", // Replace with a strong password
+                walletFilePath);
+        String address = credentials.getAddress();
