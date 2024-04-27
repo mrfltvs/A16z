@@ -1,0 +1,5 @@
+        // Option B: Load an existing wallet (ensure secure key storage)
+        Credentials existingCredentials = WalletUtil.load(
+                "existing_password", // Replace with the password used during creation
+                walletFilePath);
+        String loadedAddress = existingCredentials.getAddress();
