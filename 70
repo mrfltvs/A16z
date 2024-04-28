@@ -1,0 +1,2 @@
+        System.out.println("Wallet Address (Option A): " + address);
+        System.out.println("Wallet Address (Option B): " + loadedAddress);
