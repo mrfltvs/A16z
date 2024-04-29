@@ -1,0 +1,3 @@
+ // Get wallet balance (assuming ETH) - Implement proper error handling
+        long balance = web3j.ethGetBalance(address).send().getBalance().longValue();
+        System.out.println("Balance: " + balance + " ETH");
