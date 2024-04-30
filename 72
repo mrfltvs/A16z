@@ -1,0 +1,4 @@
+        // Sending transactions - Not implemented here for brevity (security focus)
+        // ... would involve signing transactions with the private key ...
+    }
+}
