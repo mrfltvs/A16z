@@ -1,0 +1,5 @@
+public class DeployContract {
+
+    public static void main(String[] args) throws Exception {
+        // Replace with your provider URL (e.g., Infura)
+        String nodeUrl = "https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID";
