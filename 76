@@ -1,0 +1,3 @@
+        // Replace with your wallet address and private key password
+        String walletAddress = "YOUR_WALLET_ADDRESS";
+        String password = "YOUR_WALLET_PASSWORD";
