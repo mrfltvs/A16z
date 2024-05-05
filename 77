@@ -1,0 +1,5 @@
+        // Connect to a node
+        Web3j web3j = Web3j.build(new HttpWeb3j(nodeUrl));
+
+        // Load wallet credentials
+        Credentials credentials = Credentials.create(walletAddress, password);
