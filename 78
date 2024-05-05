@@ -1,0 +1,3 @@
+        // Contract bytecode and ABI (replace with your actual contract details)
+        String bytecode = "YOUR_CONTRACT_BYTECODE";
+        String abi = "YOUR_CONTRACT_ABI";
