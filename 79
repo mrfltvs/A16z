@@ -1,0 +1,4 @@
+        // Contract gas provider (adjust gas price and limit as needed)
+        ContractGasProvider gasProvider = new ContractGasProvider(
+                Convert.toWei("21000", Convert.Unit.GWEI).toBigInteger(),
+                BigInteger.valueOf(4700000));
