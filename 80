@@ -1,0 +1,3 @@
+        // Deploy the contract
+        Contract contract = Contract.deploy(web3j, credentials, gasProvider, bytecode, abi)
+                .send();
