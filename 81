@@ -1,0 +1,3 @@
+        // Get the contract address
+        String contractAddress = contract.getContractAddress();
+        System.out.println("Contract deployed to address: " + contractAddress);
