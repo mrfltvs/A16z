@@ -1,0 +1,8 @@
+    private static void waitForTransactionReceipt(Web3j web3j, TransactionReceipt receipt) throws Exception {
+        int MAX_TRIES = 20;
+        int counter = 0;
+        while (receipt == null && counter < MAX_TRIES) {
+            TimeUnit.SECONDS.sleep(1);
+            receipt = web3j.ethGetTransactionReceipt(receipt.getTransactionHash()).send().getTransactionReceipt();
+            counter++;
+        }
