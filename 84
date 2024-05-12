@@ -1,0 +1,5 @@
+        if (receipt == null) {
+            throw new Exception("Transaction receipt not found after " + MAX_TRIES + " tries.");
+        }
+    }
+}
