@@ -1,0 +1,8 @@
+    public Block(int index, long timestamp, String data, String previousHash) {
+        this.index = index;
+        this.timestamp = timestamp;
+        this.data = data;
+        this.previousHash = previousHash;
+        this.hash = calculateHash();
+        this.nonce = 0;
+    }
