@@ -1,0 +1,4 @@
+    public String calculateHash() {
+        String dataToHash = index + timestamp + data + previousHash + nonce;
+        MessageDigest digest = null;
+        byte[] bytes = null;
