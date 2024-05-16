@@ -1,0 +1,6 @@
+        try {
+            digest = MessageDigest.getInstance("SHA-256");
+            bytes = digest.digest(dataToHash.getBytes("UTF-8"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
