@@ -1,0 +1,7 @@
+        StringBuffer buffer = new StringBuffer();
+        for (byte b : bytes) {
+            buffer.append(String.format("%02x", b));
+        }
+
+        return buffer.toString();
+    }
