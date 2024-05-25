@@ -1,0 +1,4 @@
+  public void addBlock(Block block) {
+        block.mineBlock(difficulty);
+        blockchain.add(block);
+    }
