@@ -1,0 +1,4 @@
+            if (!currentBlock.getHash().equals(currentBlock.calculateHash())) {
+                System.out.println("Current Hashes not equal");
+                return false;
+            }
