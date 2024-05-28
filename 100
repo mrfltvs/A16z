@@ -1,0 +1,5 @@
+           if (!previousBlock.getHash().equals(currentBlock.getPreviousHash())) {
+                System.out.println("Previous Hashes not equal");
+                return false;
+            }
+        }
