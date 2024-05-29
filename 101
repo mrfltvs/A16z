@@ -1,0 +1,8 @@
+ 
+        return true;
+    }
+
+    public void displayChain() {
+        for (Block block : blockchain) {
+            System.out.println("Index: " + block.getIndex());
+            System.out.println("Timestamp: " + 
