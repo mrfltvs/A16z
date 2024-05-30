@@ -1,0 +1,7 @@
+block.getTimestamp());
+            System.out.println("Data: " + block.getData());
+            System.out.println("Previous Hash: " + block.getPreviousHash());
+            System.out.println("Hash: " + block.getHash());
+            System.out.println();
+        }
+    }
