@@ -1,0 +1,5 @@
+    public static void main(String[] args) {
+        Blockchain blockchain = new Blockchain(4);
+
+        Block block1 = new Block(1, System.currentTimeMillis(), "Transaction 1", blockchain.blockchain.get(blockchain.blockchain.size() - 1).getHash());
+        blockchain.addBlock(block1);
