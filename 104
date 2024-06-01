@@ -1,0 +1,3 @@
+
+        Block block2 = new Block(2, System.currentTimeMillis(), "Transaction 2", blockchain.blockchain.get(blockchain.blockchain.size() - 1).getHash());
+        blockchain.addBlock(block2);
