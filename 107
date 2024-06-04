@@ -1,0 +1,6 @@
+class Block {
+    private int index;
+    private String previousHash;
+    private long timestamp;
+    private String data;
+    private String hash;
