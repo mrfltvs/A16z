@@ -1,0 +1,5 @@
+    // Getters and setters
+    public int getIndex() {
+        return index;
+    }
+  
