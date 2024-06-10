@@ -1,0 +1,10 @@
+class Blockchain {
+    private List<Block> chain;
+
+    // Constructor
+    public Blockchain() {
+        this.chain = new ArrayList<>();
+        // Genesis block
+        Block genesisBlock = new Block(0, "0", System.currentTimeMillis(), "Genesis Block", "0");
+        chain.add(genesisBlock);
+    }
