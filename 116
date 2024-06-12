@@ -1,0 +1,3 @@
+        Block newBlock = new Block(index, previousHash, timestamp, data, hash);
+        chain.add(newBlock);
+    }
