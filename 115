@@ -1,0 +1,8 @@
+
+    // Add a new block to the chain
+    public void addBlock(String data) {
+        Block previousBlock = chain.get(chain.size() - 1);
+        int index = previousBlock.getIndex() + 1;
+        String previousHash = previousBlock.getHash();
+        long timestamp = System.currentTimeMillis();
+        String hash = "generateHashFunctionHere";
