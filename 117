@@ -1,0 +1,5 @@
+    // Print the chain
+    public void printChain() {
+        for (Block block : chain) {
+            System.out.println("Index: " + block.getIndex());
+            System.out.println("Previous Hash: " + block.getPreviousHash());
