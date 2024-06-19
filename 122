@@ -1,0 +1,3 @@
+    def process_data(self):
+        # Process the data here
+        return self.data
