@@ -1,0 +1,3 @@
+  public L2Solution(Object data) {
+        this.data = data;
+    }
