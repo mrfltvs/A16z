@@ -1,0 +1,5 @@
+    public Object processData() {
+        // Process the data here
+        return this.data;
+    }
+}
