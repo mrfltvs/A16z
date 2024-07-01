@@ -1,0 +1,6 @@
+go
+package main
+
+type L2Solution struct {
+    data interface{}
+}
