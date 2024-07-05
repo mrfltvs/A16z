@@ -1,0 +1,3 @@
+func NewL2Solution(data interface{}) *L2Solution {
+    return &L2Solution{data: data}
+}
